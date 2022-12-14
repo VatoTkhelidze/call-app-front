@@ -71,7 +71,7 @@ console.log(props.editData?.phone);
       modalTransition={{ timeout: 1000 }}
       style={{background:"red"}}
     >
-      <ModalHeader>Add a new user</ModalHeader>
+      <ModalHeader>Edit current user</ModalHeader>
       <ModalBody>
         <Form onSubmit={saveInfo}>
           <label htmlFor="nameInp">Name</label>
