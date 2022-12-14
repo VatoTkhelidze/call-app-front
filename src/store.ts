@@ -9,7 +9,7 @@ export const store = create<State>((set) => ({
   fetch: async () => {
     set(() => ({ loading: true }));
     try {
-      const response = await axios.get("http://localhost:3001/");
+      const response = await axios.get("https://callap-backend-production.up.railway.app/");
       return set({ data: response.data, loading: false });
     } catch (error) {
       console.log(error);
